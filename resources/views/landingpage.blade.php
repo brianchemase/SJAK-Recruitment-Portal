@@ -55,9 +55,9 @@
 					<div class="collapse navbar-collapse ms-auto" id="navigation">
 	
 						<ul class="navbar-nav ms-auto align-items-lg-center">
-							<li class="nav-item me-lg-4">
+							<!-- <li class="nav-item me-lg-4">
 								<a class="nav-link" href="index.html">Home</a>
-							</li>
+							</li> -->
 							<!-- <li class="nav-item dropdown me-lg-4">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
 								<ul class="dropdown-menu dropdown-menu-lg-end rounded shadow"> 
@@ -73,7 +73,7 @@
 								</ul>
 							</li> -->
 							<li class="nav-item pt-3 pt-lg-0">
-								<a class="nav-btn btn btn-primary text-white" href="">Staff Login</a>
+								<a class="nav-btn btn btn-secondary text-white" href="">Staff Login</a>
 							</li>
 						</ul><!--//navbar-nav-->
 
