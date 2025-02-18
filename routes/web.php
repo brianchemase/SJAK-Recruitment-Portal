@@ -22,6 +22,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/details', function () {
-    return view('jobdetails');
+Route::get('/AdvertDetails', function () {
+    return view('oldjobdetails');
 });
