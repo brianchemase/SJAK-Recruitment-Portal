@@ -97,23 +97,35 @@
                             <h4 class="mb-3">Job description</h4>
                             <p>{{$JobDescription}}</p>
                             <h4 class="mb-3">Responsibility</h4>
-                            <p>{{$Responsibilities}}</p>
+                            <p>{{$ResponsibilitiesTitle}}</p>
+
                             <ul class="list-unstyled">
+                                @foreach($responsibilities as $responsibility)
+                                    <li><i class="fa fa-angle-right text-primary me-2"></i>{{ $responsibility }}</li>
+                                @endforeach
+                            </ul>
+
+                            <!-- <ul class="list-unstyled">
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Responsility 1</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Responsility 2</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Responsility 3</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Responsility 4</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Responsility 5</li>
-                            </ul>
+                            </ul> -->
                             <h4 class="mb-3">Qualifications</h4>
-                            <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
+                            <p>For Candidates interested for this role, you are expected to have the following:</p>
                             <ul class="list-unstyled">
+                                @foreach($qualifications  as $qualification)
+                                    <li><i class="fa fa-angle-right text-primary me-2"></i>{{ $qualification }}</li>
+                                @endforeach
+                            </ul>
+                            <!-- <ul class="list-unstyled">
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Dolor justo tempor duo ipsum accusam</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Elitr stet dolor vero clita labore gubergren</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Rebum vero dolores dolores elitr</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Est voluptua et sanctus at sanctus erat</li>
                                 <li><i class="fa fa-angle-right text-primary me-2"></i>Diam diam stet erat no est est</li>
-                            </ul>
+                            </ul> -->
                         </div>
         
                         <div class="">

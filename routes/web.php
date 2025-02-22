@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\JobsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,13 +30,18 @@ Route::get('/AdvertDetails', function () {
 });
 
 Route::get('/AdvertDetailsdata', [ListingController::class, 'AdvertDetails'])->name('addata');
+Route::post('job/store', [JobsController::class, 'store'])->name('jobs.store');
 
 
 Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [ListingController::class, 'home'])->name('dashone');
     Route::get('/forms', [ListingController::class, 'form'])->name('dashoneform');
+    
     Route::get('/Table', [ListingController::class, 'table'])->name('dashonetable');
     Route::get('/blank', [ListingController::class, 'home'])->name('dashoneblank');
     Route::get('/formtable', [ListingController::class, 'formtable'])->name('dashoneformtable');
+
+
+    Route::get('/RegisterVacancy', [JobsController::class, 'vacancyform'])->name('vacancyform');
 });
